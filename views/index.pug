@@ -7,5 +7,5 @@ block content
     div(class='message')
       header 
         h3= val.user
-        h4= new Date(val.added).toLocaleString()
+        h4= new Date(val.date).toLocaleString('en-GB')
       p #{val.text}
