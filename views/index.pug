@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  h1
-    a(href='/new')= 'New message'
-  br
+  div(class='link')
+    a(href='/new')= 'Join the conversation - post a message'
   each val in messages
-    div 
-      h2= val.added
-      h3= val.user
+    div(class='message')
+      header 
+        h3= val.user
+        h4= new Date(val.added).toLocaleString()
       p #{val.text}
