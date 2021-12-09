@@ -3,13 +3,8 @@ extends layout
 block content
   form(method='POST' action='/new')
     label= 'Your name'
-      br
       input(type='text' name='user-name')
-    br
-    br
     label= 'Your message'
-      br
       textarea(type='text' name='user-text')
-    br
-    br
-    button(type='submit')= 'Send message'
+    div(class='btn')
+      button(type='submit')= 'Send message'
